@@ -1,0 +1,150 @@
+name: appthoviet
+description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  toggle_bar: ^1.0.0
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.0
+  http: ^0.12.2
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_speed_dial: ^1.0.9 
+  url_launcher: ^5.4.10
+  fab_circular_menu: ^1.0.1
+  flutter_form_builder: ^4.0.1
+  dropdown_formfield: ^0.1.3
+  convert: ^2.1.1
+  
+  intent: ^1.4.0
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+  - lib/images/unnamed.jpg
+  - lib/images/tapthecty.png
+  - lib/images/icon_tho.png
+  - lib/images/ThoKhac.png 
+  - lib/images/mo-to-dan-lanh.jpg
+  - lib/images/Block-may-lanh.jpg
+  - lib/images/phieuGiamGia.jpg
+  - lib/images/kddv/efficiency.png
+  - lib/images/kddv/premium-quality.png
+  - lib/images/kddv/reputation.png
+  - lib/images/mayNuocNong/lap-may-nang-luong-mat-troi-768x432.jpg
+  - lib/images/mayNuocNong/sua-may-nuoc-nong-nang-luong-mat-troi.gif
+  - lib/images/mayNuocNong/sua-may-nuoc-nong-nang-luong.jpg
+  - lib/images/chongTham/2407-20-Chong-tham-san-thuong-2.jpg
+  - lib/images/chongTham/2407-20-sua-chua-tham-tuong-nha-A-Linh-8.jpg
+  - lib/images/chongTham/chongthamtuongnha.jpg
+  - lib/images/pinMatTroi/hieu-qua-cua-viec-ve-sinh_result-768x512.jpg
+  - lib/images/pinMatTroi/nha-may-nang-luong-mat-troi.jpg
+  - lib/images/pinMatTroi/lap-dat-he-thong-pin-mat-troi-1.jpg
+  - lib/images/pinMatTroi/cach-ve-sinh-tam-nang-luong-mat-troi.jpg
+  - lib/images/thoDien/tho-dien-nuoc-tphcm-quan-4.jpg
+  - lib/images/thoDien/tho-lap-dat-dong-ho-dien-1-pha-3-pha-tphcm-1.jpg
+  - lib/images/thoDien/tho-lap-den-led-trang-tri-shop-quan-ao-thoi-trang-4.jpg
+  - lib/images/thoDien/sua-o-dien-bi-long-3.png
+  - lib/images/thoDien/tho-lap-bong-den-dien-quan-binh-thanh.jpg
+  - lib/images/thoDien/fix_14.jpg
+  - lib/images/thoDien/fix_11.jpg
+  - lib/images/thoDien/fix_15.jpg
+  - lib/images/thoDienLanh/fix_tho-sua-may-giat-tai-nha-tphcm.jpg
+  - lib/images/thoDienLanh/fix_Tho-sua-may-lanh.jpg
+  - lib/images/thoDienLanh/fix_tho-sua-tu-lanh-11-1.jpg
+  - lib/images/thoDienLanh/fix_tho-ve-sinh-may-giat.jpg
+  - lib/images/thoDienLanh/fix_Tho-ve-sinh-rua-may-lanh-quan-1-2-3-4-5-6-7-10.jpg
+  - lib/images/thoDienLanh/may-lanh-chay-nuoc.jpg
+  - lib/images/thoDienNuoc/Banner-sua-dien-nuoc-dien-lanh-hcm.jpg
+  - lib/images/thoDienNuoc/fix_dien-1-pha-tho-sua-dien.jpg
+  - lib/images/thoDienNuoc/Lap-ong-nuoc-nong-nang-luong-mat-troi-cho-nha-dan-tan-phu-1.jpg
+  - lib/images/thoDienNuoc/Lap-ong-nuoc-nong-nang-luong-mat-troi-cho-nha-dan-tan-phu-8.jpg
+  - lib/images/thoDienNuoc/tho-sua-dien-3-pha-tai-quan-2.jpg
+  - lib/images/doNuocRoRi/2_abb_stethophon_04_funk_mit_zubehoer_06.jpg
+  - lib/images/doNuocRoRi/do-tim-ro-ri-nuoc.jpg
+  - lib/images/doNuocRoRi/fix_Do-tim-ro-ri-that-thoat-nuoc-4.jpg
+  - lib/images/doNuocRoRi/images.jpg
+  - lib/images/doNuocRoRi/s-l300-1.jpg
+  - lib/images/thoMoc/tho-moc-son-sua-do-go-57.jpg
+  - lib/images/thoMoc/tho-moc-son-sua-do-go-68.jpg
+  - lib/images/thongNghet/BonRuaChen.png
+  - lib/images/thongNghet/cach-thong-tac-bon-cau.jpg
+  - lib/images/thongNghet/fix_cach-thong-bon-cau-bi-tac-nghet-bang-day-lo-xo.jpg
+  - lib/images/thongNghet/lavabo-bi-nghet-va-day-la-cach-thong-tac-cuc-de-dang-1_800x400-1.jpg
+  - lib/images/thongNghet/tho-thong-cau-cong-nuoc-bi-tac-nghet-tai-quan-12-2.jpg
+  - lib/images/thongNghet/thong-bon-cau-bang-bang-dinh-keo.gif
+  - lib/images/thongNghet/thong-bon-cau-bang-day-lo-xo-1.jpg
+  - lib/images/thongNghet/thong-cau-cong-bi-tac-nghet-tai-nha-quan-31.jpg
+  - lib/images/thongNghet/thong-tac-bon-cau-bang-moc-quan-ao.jpg
+  - lib/images/thoSuaMayLanh/fix_thao-lap-may-lanh-tai-quan-2.jpg
+  - lib/images/thoSuaMayLanh/suamaylanh.png
+  - lib/images/thoSuaMayLanh/Tho-dien-lanh-sua-may-lanh_tho-viet-2-e1541128658283.jpg
+  - lib/images/thoSuaMayLanh/tho-sua-dien-lanh-tai-nha-quan-9.jpg
+  - lib/images/thoSuaMayLanh/Tho-sua-may-lanh-tai-nha.jpg
+  - lib/images/thoSuaMayLanh/Tho-sua-may-lanh.jpg
+  - lib/images/thoSuaNha/CSKH.png
+  - lib/images/thoSuaNha/doi-tac-sua-nha-tron-goi.jpg
+  - lib/images/thoSuaNha/son-sua-nha-cu.png
+  - lib/images/thoSuaNha/thietke.png
+  - lib/images/VSBN/fix_ve-sinh-bon-nuoc-inox-quan-11-5-e1544773389848-1.jpg
+  - lib/images/VSBN/fix_ve-sinh-bon-nuoc-inox-quan-11-5-e1544773389848-7.jpg
+  - lib/images/VSBN/fix_ve-sinh-bon-nuoc-inox-quan-11-5-e1544773389848-9.jpg
+  - lib/images/zalo.png
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
