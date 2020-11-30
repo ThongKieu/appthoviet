@@ -1,0 +1,1613 @@
+﻿{
+    "data": [{
+            "quan": "Quận 1",
+            "phuong": "Phường Tân Định",
+            "id": "1"
+        },
+        {
+            "quan": "Quận 1",
+            "phuong": "Phường Đa Kao",
+            "id": "2"
+        },
+        {
+            "quan": "Quận 1",
+            "phuong": "Phường Bến Nghé",
+            "id": "3"
+        },
+        {
+            "quan": "Quận 1",
+            "phuong": "Phường Bến Thành",
+            "id": "4"
+        },
+        {
+            "quan": "Quận 1",
+            "phuong": "Phường Nguyễn Thái Bình",
+            "id": "5"
+        },
+        {
+            "quan": "Quận 1",
+            "phuong": "Phường Phạm Ngũ Lão",
+            "id": "6"
+        },
+        {
+            "quan": "Quận 1",
+            "phuong": "Phường Cầu Ông Lãnh",
+            "id": "7"
+        },
+        {
+            "quan": "Quận 1",
+            "phuong": "Phường Cô Giang",
+            "id": "8"
+        },
+        {
+            "quan": "Quận 1",
+            "phuong": "Phường Nguyễn Cư Trinh",
+            "id": "9"
+        },
+        {
+            "quan": "Quận 1",
+            "phuong": "Phường Cầu Kho",
+            "id": "10"
+        },
+        {
+            "quan": "Quận 12",
+            "phuong": "Phường Thạnh Xuân",
+            "id": "11"
+        },
+        {
+            "quan": "Quận 12",
+            "phuong": "Phường Thạnh Lộc",
+            "id": "12"
+        },
+        {
+            "quan": "Quận 12",
+            "phuong": "Phường Hiệp Thành",
+            "id": "13"
+        },
+        {
+            "quan": "Quận 12",
+            "phuong": "Phường Thới An",
+            "id": "14"
+        },
+        {
+            "quan": "Quận 12",
+            "phuong": "Phường Tân Chánh Hiệp",
+            "id": "15"
+        },
+        {
+            "quan": "Quận 12",
+            "phuong": "Phường An Phú Đông",
+            "id": "16"
+        },
+        {
+            "quan": "Quận 12",
+            "phuong": "Phường Tân Thới Hiệp",
+            "id": "17"
+        },
+        {
+            "quan": "Quận 12",
+            "phuong": "Phường Trung Mỹ Tây",
+            "id": "18"
+        },
+        {
+            "quan": "Quận 12",
+            "phuong": "Phường Tân Hưng Thuận",
+            "id": "19"
+        },
+        {
+            "quan": "Quận 12",
+            "phuong": "Phường Đông Hưng Thuận",
+            "id": "20"
+        },
+        {
+            "quan": "Quận 12",
+            "phuong": "Phường Tân Thới Nhất",
+            "id": "21"
+        },
+        {
+            "quan": "Quận Thủ Đức",
+            "phuong": "Phường Linh Xuân",
+            "id": "22"
+        },
+        {
+            "quan": "Quận Thủ Đức",
+            "phuong": "Phường Bình Chiểu",
+            "id": "23"
+        },
+        {
+            "quan": "Quận Thủ Đức",
+            "phuong": "Phường Linh Trung",
+            "id": "24"
+        },
+        {
+            "quan": "Quận Thủ Đức",
+            "phuong": "Phường Tam Bình",
+            "id": "25"
+        },
+        {
+            "quan": "Quận Thủ Đức",
+            "phuong": "Phường Tam Phú",
+            "id": "26"
+        },
+        {
+            "quan": "Quận Thủ Đức",
+            "phuong": "Phường Hiệp Bình Phước",
+            "id": "27"
+        },
+        {
+            "quan": "Quận Thủ Đức",
+            "phuong": "Phường Hiệp Bình Chánh",
+            "id": "28"
+        },
+        {
+            "quan": "Quận Thủ Đức",
+            "phuong": "Phường Linh Chiểu",
+            "id": "29"
+        },
+        {
+            "quan": "Quận Thủ Đức",
+            "phuong": "Phường Linh Tây",
+            "id": "30"
+        },
+        {
+            "quan": "Quận Thủ Đức",
+            "phuong": "Phường Linh Đông",
+            "id": "31"
+        },
+        {
+            "quan": "Quận Thủ Đức",
+            "phuong": "Phường Bình Thọ",
+            "id": "32"
+        },
+        {
+            "quan": "Quận Thủ Đức",
+            "phuong": "Phường Trường Thọ",
+            "id": "33"
+        },
+        {
+            "quan": "Quận 9",
+            "phuong": "Phường Long Bình",
+            "id": "34"
+        },
+        {
+            "quan": "Quận 9",
+            "phuong": "Phường Long Thạnh Mỹ",
+            "id": "35"
+        },
+        {
+            "quan": "Quận 9",
+            "phuong": "Phường Tân Phú",
+            "id": "36"
+        },
+        {
+            "quan": "Quận 9",
+            "phuong": "Phường Hiệp Phú",
+            "id": "37"
+        },
+        {
+            "quan": "Quận 9",
+            "phuong": "Phường Tăng Nhơn Phú A",
+            "id": "38"
+        },
+        {
+            "quan": "Quận 9",
+            "phuong": "Phường Tăng Nhơn Phú B",
+            "id": "39"
+        },
+        {
+            "quan": "Quận 9",
+            "phuong": "Phường Phước Long B",
+            "id": "40"
+        },
+        {
+            "quan": "Quận 9",
+            "phuong": "Phường Phước Long A",
+            "id": "41"
+        },
+        {
+            "quan": "Quận 9",
+            "phuong": "Phường Trường Thạnh",
+            "id": "42"
+        },
+        {
+            "quan": "Quận 9",
+            "phuong": "Phường Long Phước",
+            "id": "43"
+        },
+        {
+            "quan": "Quận 9",
+            "phuong": "Phường Long Trường",
+            "id": "44"
+        },
+        {
+            "quan": "Quận 9",
+            "phuong": "Phường Phước Bình",
+            "id": "45"
+        },
+        {
+            "quan": "Quận 9",
+            "phuong": "Phường Phú Hữu",
+            "id": "46"
+        },
+        {
+            "quan": "Quận Gò Vấp",
+            "phuong": "Phường 15",
+            "id": "47"
+        },
+        {
+            "quan": "Quận Gò Vấp",
+            "phuong": "Phường 13",
+            "id": "48"
+        },
+        {
+            "quan": "Quận Gò Vấp",
+            "phuong": "Phường 17",
+            "id": "49"
+        },
+        {
+            "quan": "Quận Gò Vấp",
+            "phuong": "Phường 06",
+            "id": "50"
+        },
+        {
+            "quan": "Quận Gò Vấp",
+            "phuong": "Phường 16",
+            "id": "51"
+        },
+        {
+            "quan": "Quận Gò Vấp",
+            "phuong": "Phường 12",
+            "id": "52"
+        },
+        {
+            "quan": "Quận Gò Vấp",
+            "phuong": "Phường 14",
+            "id": "53"
+        },
+        {
+            "quan": "Quận Gò Vấp",
+            "phuong": "Phường 10",
+            "id": "54"
+        },
+        {
+            "quan": "Quận Gò Vấp",
+            "phuong": "Phường 05",
+            "id": "55"
+        },
+        {
+            "quan": "Quận Gò Vấp",
+            "phuong": "Phường 07",
+            "id": "56"
+        },
+        {
+            "quan": "Quận Gò Vấp",
+            "phuong": "Phường 04",
+            "id": "57"
+        },
+        {
+            "quan": "Quận Gò Vấp",
+            "phuong": "Phường 01",
+            "id": "58"
+        },
+        {
+            "quan": "Quận Gò Vấp",
+            "phuong": "Phường 09",
+            "id": "59"
+        },
+        {
+            "quan": "Quận Gò Vấp",
+            "phuong": "Phường 08",
+            "id": "60"
+        },
+        {
+            "quan": "Quận Gò Vấp",
+            "phuong": "Phường 11",
+            "id": "61"
+        },
+        {
+            "quan": "Quận Gò Vấp",
+            "phuong": "Phường 03",
+            "id": "62"
+        },
+        {
+            "quan": "Quận Bình Thạnh",
+            "phuong": "Phường 13",
+            "id": "63"
+        },
+        {
+            "quan": "Quận Bình Thạnh",
+            "phuong": "Phường 11",
+            "id": "64"
+        },
+        {
+            "quan": "Quận Bình Thạnh",
+            "phuong": "Phường 27",
+            "id": "65"
+        },
+        {
+            "quan": "Quận Bình Thạnh",
+            "phuong": "Phường 26",
+            "id": "66"
+        },
+        {
+            "quan": "Quận Bình Thạnh",
+            "phuong": "Phường 12",
+            "id": "67"
+        },
+        {
+            "quan": "Quận Bình Thạnh",
+            "phuong": "Phường 25",
+            "id": "68"
+        },
+        {
+            "quan": "Quận Bình Thạnh",
+            "phuong": "Phường 05",
+            "id": "69"
+        },
+        {
+            "quan": "Quận Bình Thạnh",
+            "phuong": "Phường 07",
+            "id": "70"
+        },
+        {
+            "quan": "Quận Bình Thạnh",
+            "phuong": "Phường 24",
+            "id": "71"
+        },
+        {
+            "quan": "Quận Bình Thạnh",
+            "phuong": "Phường 06",
+            "id": "72"
+        },
+        {
+            "quan": "Quận Bình Thạnh",
+            "phuong": "Phường 14",
+            "id": "73"
+        },
+        {
+            "quan": "Quận Bình Thạnh",
+            "phuong": "Phường 15",
+            "id": "74"
+        },
+        {
+            "quan": "Quận Bình Thạnh",
+            "phuong": "Phường 02",
+            "id": "75"
+        },
+        {
+            "quan": "Quận Bình Thạnh",
+            "phuong": "Phường 01",
+            "id": "76"
+        },
+        {
+            "quan": "Quận Bình Thạnh",
+            "phuong": "Phường 03",
+            "id": "77"
+        },
+        {
+            "quan": "Quận Bình Thạnh",
+            "phuong": "Phường 17",
+            "id": "78"
+        },
+        {
+            "quan": "Quận Bình Thạnh",
+            "phuong": "Phường 21",
+            "id": "79"
+        },
+        {
+            "quan": "Quận Bình Thạnh",
+            "phuong": "Phường 22",
+            "id": "80"
+        },
+        {
+            "quan": "Quận Bình Thạnh",
+            "phuong": "Phường 19",
+            "id": "81"
+        },
+        {
+            "quan": "Quận Bình Thạnh",
+            "phuong": "Phường 28",
+            "id": "82"
+        },
+        {
+            "quan": "Quận Tân Bình",
+            "phuong": "Phường 02",
+            "id": "83"
+        },
+        {
+            "quan": "Quận Tân Bình",
+            "phuong": "Phường 04",
+            "id": "84"
+        },
+        {
+            "quan": "Quận Tân Bình",
+            "phuong": "Phường 12",
+            "id": "85"
+        },
+        {
+            "quan": "Quận Tân Bình",
+            "phuong": "Phường 13",
+            "id": "86"
+        },
+        {
+            "quan": "Quận Tân Bình",
+            "phuong": "Phường 01",
+            "id": "87"
+        },
+        {
+            "quan": "Quận Tân Bình",
+            "phuong": "Phường 03",
+            "id": "88"
+        },
+        {
+            "quan": "Quận Tân Bình",
+            "phuong": "Phường 11",
+            "id": "89"
+        },
+        {
+            "quan": "Quận Tân Bình",
+            "phuong": "Phường 07",
+            "id": "90"
+        },
+        {
+            "quan": "Quận Tân Bình",
+            "phuong": "Phường 05",
+            "id": "91"
+        },
+        {
+            "quan": "Quận Tân Bình",
+            "phuong": "Phường 10",
+            "id": "92"
+        },
+        {
+            "quan": "Quận Tân Bình",
+            "phuong": "Phường 06",
+            "id": "93"
+        },
+        {
+            "quan": "Quận Tân Bình",
+            "phuong": "Phường 08",
+            "id": "94"
+        },
+        {
+            "quan": "Quận Tân Bình",
+            "phuong": "Phường 09",
+            "id": "95"
+        },
+        {
+            "quan": "Quận Tân Bình",
+            "phuong": "Phường 14",
+            "id": "96"
+        },
+        {
+            "quan": "Quận Tân Bình",
+            "phuong": "Phường 15",
+            "id": "97"
+        },
+        {
+            "quan": "Quận Tân Phú",
+            "phuong": "Phường Tân Sơn Nhì",
+            "id": "98"
+        },
+        {
+            "quan": "Quận Tân Phú",
+            "phuong": "Phường Tây Thạnh",
+            "id": "99"
+        },
+        {
+            "quan": "Quận Tân Phú",
+            "phuong": "Phường Sơn Kỳ",
+            "id": "100"
+        },
+        {
+            "quan": "Quận Tân Phú",
+            "phuong": "Phường Tân Qúy",
+            "id": "101"
+        },
+        {
+            "quan": "Quận Tân Phú",
+            "phuong": "Phường Tân Thành",
+            "id": "102"
+        },
+        {
+            "quan": "Quận Tân Phú",
+            "phuong": "Phường Phú Thọ Hoà",
+            "id": "103"
+        },
+        {
+            "quan": "Quận Tân Phú",
+            "phuong": "Phường Phú Thạnh",
+            "id": "104"
+        },
+        {
+            "quan": "Quận Tân Phú",
+            "phuong": "Phường Phú Trung",
+            "id": "105"
+        },
+        {
+            "quan": "Quận Tân Phú",
+            "phuong": "Phường Hoà Thạnh",
+            "id": "106"
+        },
+        {
+            "quan": "Quận Tân Phú",
+            "phuong": "Phường Hiệp Tân",
+            "id": "107"
+        },
+        {
+            "quan": "Quận Tân Phú",
+            "phuong": "Phường Tân Thới Hoà",
+            "id": "108"
+        },
+        {
+            "quan": "Quận Phú Nhuận",
+            "phuong": "Phường 04",
+            "id": "109"
+        },
+        {
+            "quan": "Quận Phú Nhuận",
+            "phuong": "Phường 05",
+            "id": "110"
+        },
+        {
+            "quan": "Quận Phú Nhuận",
+            "phuong": "Phường 09",
+            "id": "111"
+        },
+        {
+            "quan": "Quận Phú Nhuận",
+            "phuong": "Phường 07",
+            "id": "112"
+        },
+        {
+            "quan": "Quận Phú Nhuận",
+            "phuong": "Phường 03",
+            "id": "113"
+        },
+        {
+            "quan": "Quận Phú Nhuận",
+            "phuong": "Phường 01",
+            "id": "114"
+        },
+        {
+            "quan": "Quận Phú Nhuận",
+            "phuong": "Phường 02",
+            "id": "115"
+        },
+        {
+            "quan": "Quận Phú Nhuận",
+            "phuong": "Phường 08",
+            "id": "116"
+        },
+        {
+            "quan": "Quận Phú Nhuận",
+            "phuong": "Phường 15",
+            "id": "117"
+        },
+        {
+            "quan": "Quận Phú Nhuận",
+            "phuong": "Phường 10",
+            "id": "118"
+        },
+        {
+            "quan": "Quận Phú Nhuận",
+            "phuong": "Phường 11",
+            "id": "119"
+        },
+        {
+            "quan": "Quận Phú Nhuận",
+            "phuong": "Phường 17",
+            "id": "120"
+        },
+        {
+            "quan": "Quận Phú Nhuận",
+            "phuong": "Phường 14",
+            "id": "121"
+        },
+        {
+            "quan": "Quận Phú Nhuận",
+            "phuong": "Phường 12",
+            "id": "122"
+        },
+        {
+            "quan": "Quận Phú Nhuận",
+            "phuong": "Phường 13",
+            "id": "123"
+        },
+        {
+            "quan": "Quận 2",
+            "phuong": "Phường Thảo Điền",
+            "id": "124"
+        },
+        {
+            "quan": "Quận 2",
+            "phuong": "Phường An Phú",
+            "id": "125"
+        },
+        {
+            "quan": "Quận 2",
+            "phuong": "Phường Bình An",
+            "id": "126"
+        },
+        {
+            "quan": "Quận 2",
+            "phuong": "Phường Bình Trưng Đông",
+            "id": "127"
+        },
+        {
+            "quan": "Quận 2",
+            "phuong": "Phường Bình Trưng Tây",
+            "id": "128"
+        },
+        {
+            "quan": "Quận 2",
+            "phuong": "Phường Bình Khánh",
+            "id": "129"
+        },
+        {
+            "quan": "Quận 2",
+            "phuong": "Phường An Khánh",
+            "id": "130"
+        },
+        {
+            "quan": "Quận 2",
+            "phuong": "Phường Cát Lái",
+            "id": "131"
+        },
+        {
+            "quan": "Quận 2",
+            "phuong": "Phường Thạnh Mỹ Lợi",
+            "id": "132"
+        },
+        {
+            "quan": "Quận 2",
+            "phuong": "Phường An Lợi Đông",
+            "id": "133"
+        },
+        {
+            "quan": "Quận 2",
+            "phuong": "Phường Thủ Thiêm",
+            "id": "134"
+        },
+        {
+            "quan": "Quận 3",
+            "phuong": "Phường 08",
+            "id": "135"
+        },
+        {
+            "quan": "Quận 3",
+            "phuong": "Phường 07",
+            "id": "136"
+        },
+        {
+            "quan": "Quận 3",
+            "phuong": "Phường 14",
+            "id": "137"
+        },
+        {
+            "quan": "Quận 3",
+            "phuong": "Phường 12",
+            "id": "138"
+        },
+        {
+            "quan": "Quận 3",
+            "phuong": "Phường 11",
+            "id": "139"
+        },
+        {
+            "quan": "Quận 3",
+            "phuong": "Phường 13",
+            "id": "140"
+        },
+        {
+            "quan": "Quận 3",
+            "phuong": "Phường 06",
+            "id": "141"
+        },
+        {
+            "quan": "Quận 3",
+            "phuong": "Phường 09",
+            "id": "142"
+        },
+        {
+            "quan": "Quận 3",
+            "phuong": "Phường 10",
+            "id": "143"
+        },
+        {
+            "quan": "Quận 3",
+            "phuong": "Phường 04",
+            "id": "144"
+        },
+        {
+            "quan": "Quận 3",
+            "phuong": "Phường 05",
+            "id": "145"
+        },
+        {
+            "quan": "Quận 3",
+            "phuong": "Phường 03",
+            "id": "146"
+        },
+        {
+            "quan": "Quận 3",
+            "phuong": "Phường 02",
+            "id": "147"
+        },
+        {
+            "quan": "Quận 3",
+            "phuong": "Phường 01",
+            "id": "148"
+        },
+        {
+            "quan": "Quận 10",
+            "phuong": "Phường 15",
+            "id": "149"
+        },
+        {
+            "quan": "Quận 10",
+            "phuong": "Phường 13",
+            "id": "150"
+        },
+        {
+            "quan": "Quận 10",
+            "phuong": "Phường 14",
+            "id": "151"
+        },
+        {
+            "quan": "Quận 10",
+            "phuong": "Phường 12",
+            "id": "152"
+        },
+        {
+            "quan": "Quận 10",
+            "phuong": "Phường 11",
+            "id": "153"
+        },
+        {
+            "quan": "Quận 10",
+            "phuong": "Phường 10",
+            "id": "154"
+        },
+        {
+            "quan": "Quận 10",
+            "phuong": "Phường 09",
+            "id": "155"
+        },
+        {
+            "quan": "Quận 10",
+            "phuong": "Phường 01",
+            "id": "156"
+        },
+        {
+            "quan": "Quận 10",
+            "phuong": "Phường 08",
+            "id": "157"
+        },
+        {
+            "quan": "Quận 10",
+            "phuong": "Phường 02",
+            "id": "158"
+        },
+        {
+            "quan": "Quận 10",
+            "phuong": "Phường 04",
+            "id": "159"
+        },
+        {
+            "quan": "Quận 10",
+            "phuong": "Phường 07",
+            "id": "160"
+        },
+        {
+            "quan": "Quận 10",
+            "phuong": "Phường 05",
+            "id": "161"
+        },
+        {
+            "quan": "Quận 10",
+            "phuong": "Phường 06",
+            "id": "162"
+        },
+        {
+            "quan": "Quận 10",
+            "phuong": "Phường 03",
+            "id": "163"
+        },
+        {
+            "quan": "Quận 11",
+            "phuong": "Phường 15",
+            "id": "164"
+        },
+        {
+            "quan": "Quận 11",
+            "phuong": "Phường 05",
+            "id": "165"
+        },
+        {
+            "quan": "Quận 11",
+            "phuong": "Phường 14",
+            "id": "166"
+        },
+        {
+            "quan": "Quận 11",
+            "phuong": "Phường 11",
+            "id": "167"
+        },
+        {
+            "quan": "Quận 11",
+            "phuong": "Phường 03",
+            "id": "168"
+        },
+        {
+            "quan": "Quận 11",
+            "phuong": "Phường 10",
+            "id": "169"
+        },
+        {
+            "quan": "Quận 11",
+            "phuong": "Phường 13",
+            "id": "170"
+        },
+        {
+            "quan": "Quận 11",
+            "phuong": "Phường 08",
+            "id": "171"
+        },
+        {
+            "quan": "Quận 11",
+            "phuong": "Phường 09",
+            "id": "172"
+        },
+        {
+            "quan": "Quận 11",
+            "phuong": "Phường 12",
+            "id": "173"
+        },
+        {
+            "quan": "Quận 11",
+            "phuong": "Phường 07",
+            "id": "174"
+        },
+        {
+            "quan": "Quận 11",
+            "phuong": "Phường 06",
+            "id": "175"
+        },
+        {
+            "quan": "Quận 11",
+            "phuong": "Phường 04",
+            "id": "176"
+        },
+        {
+            "quan": "Quận 11",
+            "phuong": "Phường 01",
+            "id": "177"
+        },
+        {
+            "quan": "Quận 11",
+            "phuong": "Phường 02",
+            "id": "178"
+        },
+        {
+            "quan": "Quận 11",
+            "phuong": "Phường 16",
+            "id": "179"
+        },
+        {
+            "quan": "Quận 4",
+            "phuong": "Phường 12",
+            "id": "180"
+        },
+        {
+            "quan": "Quận 4",
+            "phuong": "Phường 13",
+            "id": "181"
+        },
+        {
+            "quan": "Quận 4",
+            "phuong": "Phường 09",
+            "id": "182"
+        },
+        {
+            "quan": "Quận 4",
+            "phuong": "Phường 06",
+            "id": "183"
+        },
+        {
+            "quan": "Quận 4",
+            "phuong": "Phường 08",
+            "id": "184"
+        },
+        {
+            "quan": "Quận 4",
+            "phuong": "Phường 10",
+            "id": "185"
+        },
+        {
+            "quan": "Quận 4",
+            "phuong": "Phường 05",
+            "id": "186"
+        },
+        {
+            "quan": "Quận 4",
+            "phuong": "Phường 18",
+            "id": "187"
+        },
+        {
+            "quan": "Quận 4",
+            "phuong": "Phường 14",
+            "id": "188"
+        },
+        {
+            "quan": "Quận 4",
+            "phuong": "Phường 04",
+            "id": "189"
+        },
+        {
+            "quan": "Quận 4",
+            "phuong": "Phường 03",
+            "id": "190"
+        },
+        {
+            "quan": "Quận 4",
+            "phuong": "Phường 16",
+            "id": "191"
+        },
+        {
+            "quan": "Quận 4",
+            "phuong": "Phường 02",
+            "id": "192"
+        },
+        {
+            "quan": "Quận 4",
+            "phuong": "Phường 15",
+            "id": "193"
+        },
+        {
+            "quan": "Quận 4",
+            "phuong": "Phường 01",
+            "id": "194"
+        },
+        {
+            "quan": "Quận 5",
+            "phuong": "Phường 04",
+            "id": "195"
+        },
+        {
+            "quan": "Quận 5",
+            "phuong": "Phường 09",
+            "id": "196"
+        },
+        {
+            "quan": "Quận 5",
+            "phuong": "Phường 03",
+            "id": "197"
+        },
+        {
+            "quan": "Quận 5",
+            "phuong": "Phường 12",
+            "id": "198"
+        },
+        {
+            "quan": "Quận 5",
+            "phuong": "Phường 02",
+            "id": "199"
+        },
+        {
+            "quan": "Quận 5",
+            "phuong": "Phường 08",
+            "id": "200"
+        },
+        {
+            "quan": "Quận 5",
+            "phuong": "Phường 15",
+            "id": "201"
+        },
+        {
+            "quan": "Quận 5",
+            "phuong": "Phường 07",
+            "id": "202"
+        },
+        {
+            "quan": "Quận 5",
+            "phuong": "Phường 01",
+            "id": "203"
+        },
+        {
+            "quan": "Quận 5",
+            "phuong": "Phường 11",
+            "id": "204"
+        },
+        {
+            "quan": "Quận 5",
+            "phuong": "Phường 14",
+            "id": "205"
+        },
+        {
+            "quan": "Quận 5",
+            "phuong": "Phường 05",
+            "id": "206"
+        },
+        {
+            "quan": "Quận 5",
+            "phuong": "Phường 06",
+            "id": "207"
+        },
+        {
+            "quan": "Quận 5",
+            "phuong": "Phường 10",
+            "id": "208"
+        },
+        {
+            "quan": "Quận 5",
+            "phuong": "Phường 13",
+            "id": "209"
+        },
+        {
+            "quan": "Quận 6",
+            "phuong": "Phường 14",
+            "id": "210"
+        },
+        {
+            "quan": "Quận 6",
+            "phuong": "Phường 13",
+            "id": "211"
+        },
+        {
+            "quan": "Quận 6",
+            "phuong": "Phường 09",
+            "id": "212"
+        },
+        {
+            "quan": "Quận 6",
+            "phuong": "Phường 06",
+            "id": "213"
+        },
+        {
+            "quan": "Quận 6",
+            "phuong": "Phường 12",
+            "id": "214"
+        },
+        {
+            "quan": "Quận 6",
+            "phuong": "Phường 05",
+            "id": "215"
+        },
+        {
+            "quan": "Quận 6",
+            "phuong": "Phường 11",
+            "id": "216"
+        },
+        {
+            "quan": "Quận 6",
+            "phuong": "Phường 02",
+            "id": "217"
+        },
+        {
+            "quan": "Quận 6",
+            "phuong": "Phường 01",
+            "id": "218"
+        },
+        {
+            "quan": "Quận 6",
+            "phuong": "Phường 04",
+            "id": "219"
+        },
+        {
+            "quan": "Quận 6",
+            "phuong": "Phường 08",
+            "id": "220"
+        },
+        {
+            "quan": "Quận 6",
+            "phuong": "Phường 03",
+            "id": "221"
+        },
+        {
+            "quan": "Quận 6",
+            "phuong": "Phường 07",
+            "id": "222"
+        },
+        {
+            "quan": "Quận 6",
+            "phuong": "Phường 10",
+            "id": "223"
+        },
+        {
+            "quan": "Quận 8",
+            "phuong": "Phường 08",
+            "id": "224"
+        },
+        {
+            "quan": "Quận 8",
+            "phuong": "Phường 02",
+            "id": "225"
+        },
+        {
+            "quan": "Quận 8",
+            "phuong": "Phường 01",
+            "id": "226"
+        },
+        {
+            "quan": "Quận 8",
+            "phuong": "Phường 03",
+            "id": "227"
+        },
+        {
+            "quan": "Quận 8",
+            "phuong": "Phường 11",
+            "id": "228"
+        },
+        {
+            "quan": "Quận 8",
+            "phuong": "Phường 09",
+            "id": "229"
+        },
+        {
+            "quan": "Quận 8",
+            "phuong": "Phường 10",
+            "id": "230"
+        },
+        {
+            "quan": "Quận 8",
+            "phuong": "Phường 04",
+            "id": "231"
+        },
+        {
+            "quan": "Quận 8",
+            "phuong": "Phường 13",
+            "id": "232"
+        },
+        {
+            "quan": "Quận 8",
+            "phuong": "Phường 12",
+            "id": "233"
+        },
+        {
+            "quan": "Quận 8",
+            "phuong": "Phường 05",
+            "id": "234"
+        },
+        {
+            "quan": "Quận 8",
+            "phuong": "Phường 14",
+            "id": "235"
+        },
+        {
+            "quan": "Quận 8",
+            "phuong": "Phường 06",
+            "id": "236"
+        },
+        {
+            "quan": "Quận 8",
+            "phuong": "Phường 15",
+            "id": "237"
+        },
+        {
+            "quan": "Quận 8",
+            "phuong": "Phường 16",
+            "id": "238"
+        },
+        {
+            "quan": "Quận 8",
+            "phuong": "Phường 07",
+            "id": "239"
+        },
+        {
+            "quan": "Quận Bình Tân",
+            "phuong": "Phường Bình Hưng Hòa",
+            "id": "240"
+        },
+        {
+            "quan": "Quận Bình Tân",
+            "phuong": "Phường Bình Hưng Hoà A",
+            "id": "241"
+        },
+        {
+            "quan": "Quận Bình Tân",
+            "phuong": "Phường Bình Hưng Hoà B",
+            "id": "242"
+        },
+        {
+            "quan": "Quận Bình Tân",
+            "phuong": "Phường Bình Trị Đông",
+            "id": "243"
+        },
+        {
+            "quan": "Quận Bình Tân",
+            "phuong": "Phường Bình Trị Đông A",
+            "id": "244"
+        },
+        {
+            "quan": "Quận Bình Tân",
+            "phuong": "Phường Bình Trị Đông B",
+            "id": "245"
+        },
+        {
+            "quan": "Quận Bình Tân",
+            "phuong": "Phường Tân Tạo",
+            "id": "246"
+        },
+        {
+            "quan": "Quận Bình Tân",
+            "phuong": "Phường Tân Tạo A",
+            "id": "247"
+        },
+        {
+            "quan": "Quận Bình Tân",
+            "phuong": "Phường An Lạc",
+            "id": "248"
+        },
+        {
+            "quan": "Quận Bình Tân",
+            "phuong": "Phường An Lạc A",
+            "id": "249"
+        },
+        {
+            "quan": "Quận 7",
+            "phuong": "Phường Tân Thuận Đông",
+            "id": "250"
+        },
+        {
+            "quan": "Quận 7",
+            "phuong": "Phường Tân Thuận Tây",
+            "id": "251"
+        },
+        {
+            "quan": "Quận 7",
+            "phuong": "Phường Tân Kiểng",
+            "id": "252"
+        },
+        {
+            "quan": "Quận 7",
+            "phuong": "Phường Tân Hưng",
+            "id": "253"
+        },
+        {
+            "quan": "Quận 7",
+            "phuong": "Phường Bình Thuận",
+            "id": "254"
+        },
+        {
+            "quan": "Quận 7",
+            "phuong": "Phường Tân Quy",
+            "id": "255"
+        },
+        {
+            "quan": "Quận 7",
+            "phuong": "Phường Phú Thuận",
+            "id": "256"
+        },
+        {
+            "quan": "Quận 7",
+            "phuong": "Phường Tân Phú",
+            "id": "257"
+        },
+        {
+            "quan": "Quận 7",
+            "phuong": "Phường Tân Phong",
+            "id": "258"
+        },
+        {
+            "quan": "Quận 7",
+            "phuong": "Phường Phú Mỹ",
+            "id": "259"
+        },
+        {
+            "quan": "Huyện Củ Chi",
+            "phuong": "Thị trấn Củ Chi",
+            "id": "260"
+        },
+        {
+            "quan": "Huyện Củ Chi",
+            "phuong": "Xã Phú Mỹ Hưng",
+            "id": "261"
+        },
+        {
+            "quan": "Huyện Củ Chi",
+            "phuong": "Xã An Phú",
+            "id": "262"
+        },
+        {
+            "quan": "Huyện Củ Chi",
+            "phuong": "Xã Trung Lập Thượng",
+            "id": "263"
+        },
+        {
+            "quan": "Huyện Củ Chi",
+            "phuong": "Xã An Nhơn Tây",
+            "id": "264"
+        },
+        {
+            "quan": "Huyện Củ Chi",
+            "phuong": "Xã Nhuận Đức",
+            "id": "265"
+        },
+        {
+            "quan": "Huyện Củ Chi",
+            "phuong": "Xã Phạm Văn Cội",
+            "id": "266"
+        },
+        {
+            "quan": "Huyện Củ Chi",
+            "phuong": "Xã Phú Hòa Đông",
+            "id": "267"
+        },
+        {
+            "quan": "Huyện Củ Chi",
+            "phuong": "Xã Trung Lập Hạ",
+            "id": "268"
+        },
+        {
+            "quan": "Huyện Củ Chi",
+            "phuong": "Xã Trung An",
+            "id": "269"
+        },
+        {
+            "quan": "Huyện Củ Chi",
+            "phuong": "Xã Phước Thạnh",
+            "id": "270"
+        },
+        {
+            "quan": "Huyện Củ Chi",
+            "phuong": "Xã Phước Hiệp",
+            "id": "271"
+        },
+        {
+            "quan": "Huyện Củ Chi",
+            "phuong": "Xã Tân An Hội",
+            "id": "272"
+        },
+        {
+            "quan": "Huyện Củ Chi",
+            "phuong": "Xã Phước Vĩnh An",
+            "id": "273"
+        },
+        {
+            "quan": "Huyện Củ Chi",
+            "phuong": "Xã Thái Mỹ",
+            "id": "274"
+        },
+        {
+            "quan": "Huyện Củ Chi",
+            "phuong": "Xã Tân Thạnh Tây",
+            "id": "275"
+        },
+        {
+            "quan": "Huyện Củ Chi",
+            "phuong": "Xã Hòa Phú",
+            "id": "276"
+        },
+        {
+            "quan": "Huyện Củ Chi",
+            "phuong": "Xã Tân Thạnh Đông",
+            "id": "277"
+        },
+        {
+            "quan": "Huyện Củ Chi",
+            "phuong": "Xã Bình Mỹ",
+            "id": "278"
+        },
+        {
+            "quan": "Huyện Củ Chi",
+            "phuong": "Xã Tân Phú Trung",
+            "id": "279"
+        },
+        {
+            "quan": "Huyện Củ Chi",
+            "phuong": "Xã Tân Thông Hội",
+            "id": "280"
+        },
+        {
+            "quan": "Huyện Hóc Môn",
+            "phuong": "Thị trấn Hóc Môn",
+            "id": "281"
+        },
+        {
+            "quan": "Huyện Hóc Môn",
+            "phuong": "Xã Tân Hiệp",
+            "id": "282"
+        },
+        {
+            "quan": "Huyện Hóc Môn",
+            "phuong": "Xã Nhị Bình",
+            "id": "283"
+        },
+        {
+            "quan": "Huyện Hóc Môn",
+            "phuong": "Xã Đông Thạnh",
+            "id": "284"
+        },
+        {
+            "quan": "Huyện Hóc Môn",
+            "phuong": "Xã Tân Thới Nhì",
+            "id": "285"
+        },
+        {
+            "quan": "Huyện Hóc Môn",
+            "phuong": "Xã Thới Tam Thôn",
+            "id": "286"
+        },
+        {
+            "quan": "Huyện Hóc Môn",
+            "phuong": "Xã Xuân Thới Sơn",
+            "id": "287"
+        },
+        {
+            "quan": "Huyện Hóc Môn",
+            "phuong": "Xã Tân Xuân",
+            "id": "288"
+        },
+        {
+            "quan": "Huyện Hóc Môn",
+            "phuong": "Xã Xuân Thới Đông",
+            "id": "289"
+        },
+        {
+            "quan": "Huyện Hóc Môn",
+            "phuong": "Xã Trung Chánh",
+            "id": "290"
+        },
+        {
+            "quan": "Huyện Hóc Môn",
+            "phuong": "Xã Xuân Thới Thượng",
+            "id": "291"
+        },
+        {
+            "quan": "Huyện Hóc Môn",
+            "phuong": "Xã Bà Điểm",
+            "id": "292"
+        },
+        {
+            "quan": "Huyện Bình Chánh",
+            "phuong": "Thị trấn Tân Túc",
+            "id": "293"
+        },
+        {
+            "quan": "Huyện Bình Chánh",
+            "phuong": "Xã Phạm Văn Hai",
+            "id": "294"
+        },
+        {
+            "quan": "Huyện Bình Chánh",
+            "phuong": "Xã Vĩnh Lộc A",
+            "id": "295"
+        },
+        {
+            "quan": "Huyện Bình Chánh",
+            "phuong": "Xã Vĩnh Lộc B",
+            "id": "296"
+        },
+        {
+            "quan": "Huyện Bình Chánh",
+            "phuong": "Xã Bình Lợi",
+            "id": "297"
+        },
+        {
+            "quan": "Huyện Bình Chánh",
+            "phuong": "Xã Lê Minh Xuân",
+            "id": "298"
+        },
+        {
+            "quan": "Huyện Bình Chánh",
+            "phuong": "Xã Tân Nhựt",
+            "id": "299"
+        },
+        {
+            "quan": "Huyện Bình Chánh",
+            "phuong": "Xã Tân Kiên",
+            "id": "300"
+        },
+        {
+            "quan": "Huyện Bình Chánh",
+            "phuong": "Xã Bình Hưng",
+            "id": "301"
+        },
+        {
+            "quan": "Huyện Bình Chánh",
+            "phuong": "Xã Phong Phú",
+            "id": "302"
+        },
+        {
+            "quan": "Huyện Bình Chánh",
+            "phuong": "Xã An Phú Tây",
+            "id": "303"
+        },
+        {
+            "quan": "Huyện Bình Chánh",
+            "phuong": "Xã Hưng Long",
+            "id": "304"
+        },
+        {
+            "quan": "Huyện Bình Chánh",
+            "phuong": "Xã Đa Phước",
+            "id": "305"
+        },
+        {
+            "quan": "Huyện Bình Chánh",
+            "phuong": "Xã Tân Quý Tây",
+            "id": "306"
+        },
+        {
+            "quan": "Huyện Bình Chánh",
+            "phuong": "Xã Bình Chánh",
+            "id": "307"
+        },
+        {
+            "quan": "Huyện Bình Chánh",
+            "phuong": "Xã Quy Đức",
+            "id": "308"
+        },
+        {
+            "quan": "Huyện Nhà Bè",
+            "phuong": "Thị trấn Nhà Bè",
+            "id": "309"
+        },
+        {
+            "quan": "Huyện Nhà Bè",
+            "phuong": "Xã Phước Kiển",
+            "id": "310"
+        },
+        {
+            "quan": "Huyện Nhà Bè",
+            "phuong": "Xã Phước Lộc",
+            "id": "311"
+        },
+        {
+            "quan": "Huyện Nhà Bè",
+            "phuong": "Xã Nhơn Đức",
+            "id": "312"
+        },
+        {
+            "quan": "Huyện Nhà Bè",
+            "phuong": "Xã Phú Xuân",
+            "id": "313"
+        },
+        {
+            "quan": "Huyện Nhà Bè",
+            "phuong": "Xã Long Thới",
+            "id": "314"
+        },
+        {
+            "quan": "Huyện Nhà Bè",
+            "phuong": "Xã Hiệp Phước",
+            "id": "315"
+        },
+        {
+            "quan": "Huyện Cần Giờ",
+            "phuong": "Thị trấn Cần Thạnh",
+            "id": "316"
+        },
+        {
+            "quan": "Huyện Cần Giờ",
+            "phuong": "Xã Bình Khánh",
+            "id": "317"
+        },
+        {
+            "quan": "Huyện Cần Giờ",
+            "phuong": "Xã Tam Thôn Hiệp",
+            "id": "318"
+        },
+        {
+            "quan": "Huyện Cần Giờ",
+            "phuong": "Xã An Thới Đông",
+            "id": "319"
+        },
+        {
+            "quan": "Huyện Cần Giờ",
+            "phuong": "Xã Thạnh An",
+            "id": "320"
+        },
+        {
+            "quan": "Huyện Cần Giờ",
+            "phuong": "Xã Long Hòa",
+            "id": "321"
+        },
+        {
+            "quan": "Huyện Cần Giờ",
+            "phuong": "Xã Lý Nhơn",
+            "id": "322"
+        }
+    ]
+}

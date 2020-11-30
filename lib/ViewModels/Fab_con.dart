@@ -9,6 +9,20 @@ class FabCon extends StatelessWidget {
   final GlobalKey<FabCircularMenuState> fabKey = GlobalKey();
   @override
   Widget build(BuildContext context) {
+    _thongBaoDatLich(BuildContext context) async {
+      // Navigator.push returns a Future that completes after calling
+      // Navigator.pop on the Selection Screen.
+      final result = await Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => DatLich()),
+      );
+      // After the Selection Screen returns a result, hide any previous snackbars
+      // and show the new result.
+      Scaffold.of(context)
+        ..removeCurrentSnackBar()
+        ..showSnackBar(SnackBar(content: Text("$result")));
+    }
+
     return Builder(
       builder: (context) => FabCircularMenu(
         key: fabKey,
@@ -30,6 +44,11 @@ class FabCon extends StatelessWidget {
           RawMaterialButton(
             onPressed: () {
               launch(('https://zalo.me/0903532938'));
+              if (fabKey.currentState.isOpen) {
+                fabKey.currentState.close();
+              } else {
+                fabKey.currentState.open();
+              }
             },
             shape: CircleBorder(),
             padding: const EdgeInsets.all(30.0),
@@ -42,6 +61,11 @@ class FabCon extends StatelessWidget {
           RawMaterialButton(
             onPressed: () {
               launch('tel:0903532938');
+              if (fabKey.currentState.isOpen) {
+                fabKey.currentState.close();
+              } else {
+                fabKey.currentState.open();
+              }
             },
             shape: CircleBorder(),
             padding: const EdgeInsets.all(30.0),
@@ -49,8 +73,12 @@ class FabCon extends StatelessWidget {
           ),
           RawMaterialButton(
             onPressed: () {
-              Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => DatLich()));
+              _thongBaoDatLich(context);
+              if (fabKey.currentState.isOpen) {
+                fabKey.currentState.close();
+              } else {
+                fabKey.currentState.open();
+              }
             },
             shape: CircleBorder(),
             padding: const EdgeInsets.all(30.0),

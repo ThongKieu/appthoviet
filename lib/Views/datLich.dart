@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:dropdownfield/dropdownfield.dart';
 
 class DatLich extends StatelessWidget {
   getMethod() async {
@@ -124,7 +125,7 @@ class _DatLichWidgetState extends State<DatLichWidget> {
                         controller: sdtControll,
                         validator: (String value) {
                           if (value.isEmpty) {
-                            return 'Quên nhập yêu cầu rồi nè!';
+                            return 'Không được để trống đâu!';
                           } else if (value.length < 9 || value.length > 12) {
                             return 'SĐT không đúng';
                           }
@@ -182,32 +183,69 @@ class _DatLichWidgetState extends State<DatLichWidget> {
                           ),
                         ),
                       ),
+                      DropDownField(
+                          value: 'Country',
+                          required: false,
+                          hintText: 'Choose a country',
+                          labelText: 'Country',
+                          items: ['qweq'],
+                          setter: (dynamic newValue) {}),
                       Padding(padding: EdgeInsets.all(5)),
-                      RaisedButton(
-                        textColor: Colors.white,
-                        color: Colors.blueAccent,
-                        onPressed: () {
-                          if (_formKey.currentState.validate()) {
-                            insertMethod();
-                          } else {
-                            Scaffold.of(context).showSnackBar(
-                              SnackBar(
-                                content: Text('Bạn đã nhập sai thông tin!'),
+                      GridView.count(
+                        primary: false,
+                        padding: const EdgeInsets.fromLTRB(0, 10, 0, 10),
+                        crossAxisCount: 2,
+                        childAspectRatio: 3,
+                        crossAxisSpacing: 5.0,
+                        mainAxisSpacing: 5.0,
+                        shrinkWrap: true,
+                        children: [
+                          RaisedButton(
+                            textColor: Colors.white,
+                            color: Colors.blueAccent,
+                            onPressed: () {
+                              if (_formKey.currentState.validate()) {
+                                // insertMethod();
+                                Navigator.pop(context, 'Thành công!');
+                              } else {
+                                Scaffold.of(context).showSnackBar(
+                                  SnackBar(
+                                    content: Text('Bạn đã nhập sai thông tin!'),
+                                  ),
+                                );
+                              }
+                            },
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(15.0),
+                            ),
+                            child: Padding(
+                              padding: EdgeInsets.all(10),
+                              child: Text(
+                                "Đặt Lịch",
+                                style: TextStyle(fontSize: 18),
                               ),
-                            );
-                          }
-                        },
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(15.0),
-                        ),
-                        child: Padding(
-                          padding: EdgeInsets.all(10),
-                          child: Text(
-                            "Đặt Lịch",
-                            style: TextStyle(fontSize: 18),
+                            ),
                           ),
-                        ),
-                      ),
+                          RaisedButton(
+                            textColor: Colors.white,
+                            color: Colors.red[400],
+                            onPressed: () {
+                              Navigator.pop(
+                                  context, 'Đặt lịch không thành công!');
+                            },
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(15.0),
+                            ),
+                            child: Padding(
+                              padding: EdgeInsets.all(10),
+                              child: Text(
+                                "Thoát",
+                                style: TextStyle(fontSize: 18),
+                              ),
+                            ),
+                          ),
+                        ],
+                      )
                     ],
                   ),
                 ),

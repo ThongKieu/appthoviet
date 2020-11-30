@@ -11,6 +11,7 @@ import 'thoSuaNha.dart';
 import 'vsBeNuoc.dart';
 import 'thoDoNuocRoRi.dart';
 import 'package:appthoviet/ViewModels/Fab_con.dart';
+import 'package:appthoviet/ViewModels/homeviewmodel.dart';
 
 var url = 'lib/images/';
 
@@ -129,7 +130,9 @@ class HomeStateWidget extends State<HomeWidget> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => ThoDienNuoc()),
+                            builder: (context) => ThoDienNuoc(),
+                            // builder: (context) => ExampleForm(),
+                          ),
                         );
                       },
                       splashColor: Colors.green[200],
