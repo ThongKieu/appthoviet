@@ -1,7 +1,6 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:dropdownfield/dropdownfield.dart';
 
 class DatLich extends StatelessWidget {
   getMethod() async {
@@ -62,6 +61,27 @@ class _DatLichWidgetState extends State<DatLichWidget> {
     );
     var respBody = json.decode(res.body);
     print(respBody);
+  }
+
+  String selectedValuedQuan;
+  List phuongItemsList = List();
+  Future getDataPhuong() async {
+    var urlData =
+        "http://192.168.1.8:8080/dashboard_app/includes/class/mobile/getDataPhuong.php";
+    var resp = await http.get(urlData);
+    if (resp.statusCode == 200) {
+      var jsonData = json.decode(resp.body);
+      setState(() {
+        phuongItemsList = jsonData;
+      });
+    }
+    print(phuongItemsList);
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    getDataPhuong();
   }
 
   @override
@@ -139,34 +159,30 @@ class _DatLichWidgetState extends State<DatLichWidget> {
                           ),
                         ),
                       ),
-                      GridView.count(
-                        primary: false,
-                        padding: const EdgeInsets.fromLTRB(0, 10, 0, 10),
-                        crossAxisCount: 2,
-                        childAspectRatio: 3,
-                        crossAxisSpacing: 5.0,
-                        mainAxisSpacing: 5.0,
-                        shrinkWrap: true,
-                        children: <Widget>[
-                          TextFormField(
-                            controller: quanControll,
-                            decoration: InputDecoration(
-                              labelText: 'Quận/ huyện',
-                              border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(20),
+                      Padding(
+                        padding:
+                            EdgeInsets.symmetric(vertical: 10, horizontal: 5),
+                        child: DropdownButton(
+                          isExpanded: true,
+                          hint: Text("Chọn Quận"),
+                          value: selectedValuedQuan,
+                          items: phuongItemsList.map((quan) {
+                            return DropdownMenuItem(
+                              value: quan['tenquan'],
+                              child: Container(
+                                child: Column(
+                                  children: [Text(quan['tenquan'])],
+                                ),
                               ),
-                            ),
-                          ),
-                          TextFormField(
-                            controller: phuongControll,
-                            decoration: InputDecoration(
-                              labelText: 'Phường/ xã',
-                              border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(20),
-                              ),
-                            ),
-                          ),
-                        ],
+                            );
+                          }).toList(),
+                          onChanged: (value) {
+                            setState(() {
+                              selectedValuedQuan = value;
+                            });
+                          },
+                          style: TextStyle(color: Colors.black),
+                        ),
                       ),
                       TextFormField(
                         controller: diaChiControll,
@@ -183,13 +199,6 @@ class _DatLichWidgetState extends State<DatLichWidget> {
                           ),
                         ),
                       ),
-                      DropDownField(
-                          value: 'Country',
-                          required: false,
-                          hintText: 'Choose a country',
-                          labelText: 'Country',
-                          items: ['qweq'],
-                          setter: (dynamic newValue) {}),
                       Padding(padding: EdgeInsets.all(5)),
                       GridView.count(
                         primary: false,
@@ -231,7 +240,7 @@ class _DatLichWidgetState extends State<DatLichWidget> {
                             color: Colors.red[400],
                             onPressed: () {
                               Navigator.pop(
-                                  context, 'Đặt lịch không thành công!');
+                                  context, 'Hẹn lại bạn lần sau nhé!');
                             },
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(15.0),
