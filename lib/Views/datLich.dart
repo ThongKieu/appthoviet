@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:dropdownfield/dropdownfield.dart';
 
 class DatLich extends StatelessWidget {
   getMethod() async {
@@ -40,10 +41,10 @@ class _DatLichWidgetState extends State<DatLichWidget> {
   String get sdtCont => sdtControll.text;
   TextEditingController quanControll = TextEditingController();
   String get quanCont => quanControll.text;
-  TextEditingController phuongControll = TextEditingController();
-  String get phuongCont => phuongControll.text;
   TextEditingController diaChiControll = TextEditingController();
   String get diaChiCont => diaChiControll.text;
+
+  String selectedValuedQuan = "";
   insertMethod() async {
     String theUrl =
         "http://192.168.1.8:8080/dashboard_app/includes/class/mobile/insertData.php";
@@ -55,7 +56,6 @@ class _DatLichWidgetState extends State<DatLichWidget> {
         "tenCont": tenCont,
         "sdtCont": sdtCont,
         "quanCont": quanCont,
-        "phuongCont": phuongCont,
         "diaChiCont": diaChiCont,
       },
     );
@@ -63,37 +63,17 @@ class _DatLichWidgetState extends State<DatLichWidget> {
     print(respBody);
   }
 
-  String selectedValuedQuan;
-  List phuongItemsList = List();
-  Future getDataPhuong() async {
-    var urlData =
-        "http://192.168.1.8:8080/dashboard_app/includes/class/mobile/getDataPhuong.php";
-    var resp = await http.get(urlData);
-    if (resp.statusCode == 200) {
-      var jsonData = json.decode(resp.body);
-      setState(() {
-        phuongItemsList = jsonData;
-      });
-    }
-    print(phuongItemsList);
-  }
-
-  @override
-  void initState() {
-    super.initState();
-    getDataPhuong();
-  }
-
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Padding(
-        padding: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
+        padding: EdgeInsets.symmetric(vertical: 20, horizontal: 15),
         child: Form(
           key: _formKey,
           child: Column(
             children: <Widget>[
               Card(
+                elevation: 10,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(15.0),
                   side: BorderSide(color: Colors.grey[300]),
@@ -111,91 +91,105 @@ class _DatLichWidgetState extends State<DatLichWidget> {
                         ),
                       ),
                       Divider(),
-                      Padding(padding: EdgeInsets.all(5)),
-                      TextFormField(
-                        controller: yccvControll,
-                        validator: (String value) {
-                          if (value.isEmpty) {
-                            return 'Quên nhập yêu cầu rồi nè!';
-                          } else if (value.length < 3) {
-                            return 'Tên Phải dài hơn 3 ký tự';
-                          }
-                          return null;
-                        },
-                        decoration: InputDecoration(
-                          labelText: 'Yêu cầu công việc',
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(20),
-                          ),
-                        ),
-                      ),
-                      Padding(padding: EdgeInsets.all(5)),
-                      TextFormField(
-                        controller: tenControll,
-                        decoration: InputDecoration(
-                          labelText: 'Tên',
-                          hintText: 'Tên bạn là đẹp nhất!',
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(20),
-                          ),
-                        ),
-                      ),
-                      Padding(padding: EdgeInsets.all(5)),
-                      TextFormField(
-                        controller: sdtControll,
-                        validator: (String value) {
-                          if (value.isEmpty) {
-                            return 'Không được để trống đâu!';
-                          } else if (value.length < 9 || value.length > 12) {
-                            return 'SĐT không đúng';
-                          }
-                          return null;
-                        },
-                        keyboardType: TextInputType.phone,
-                        decoration: InputDecoration(
-                          labelText: 'Số điện thoại',
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(20),
+                      Padding(
+                        padding:
+                            EdgeInsets.symmetric(vertical: 10, horizontal: 5),
+                        child: TextFormField(
+                          cursorHeight: 15,
+                          controller: tenControll,
+                          decoration: InputDecoration(
+                            labelText: 'Tên',
+                            hintText: 'Tên bạn là đẹp nhất!',
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(20),
+                            ),
                           ),
                         ),
                       ),
                       Padding(
                         padding:
                             EdgeInsets.symmetric(vertical: 10, horizontal: 5),
-                        child: DropdownButton(
-                          isExpanded: true,
-                          hint: Text("Chọn Quận"),
-                          value: selectedValuedQuan,
-                          items: phuongItemsList.map((quan) {
-                            return DropdownMenuItem(
-                              value: quan['tenquan'],
-                              child: Container(
-                                child: Column(
-                                  children: [Text(quan['tenquan'])],
-                                ),
-                              ),
-                            );
-                          }).toList(),
-                          onChanged: (value) {
-                            setState(() {
-                              selectedValuedQuan = value;
-                            });
+                        child: TextFormField(
+                          controller: sdtControll,
+                          validator: (String value) {
+                            if (value.isEmpty) {
+                              return 'Không được để trống đâu!';
+                            } else if (value.length < 9 || value.length > 12) {
+                              return 'SĐT không đúng';
+                            }
+                            return null;
                           },
-                          style: TextStyle(color: Colors.black),
+                          keyboardType: TextInputType.phone,
+                          decoration: InputDecoration(
+                            labelText: 'Số điện thoại',
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(20),
+                            ),
+                          ),
                         ),
                       ),
-                      TextFormField(
-                        controller: diaChiControll,
-                        validator: (String value) {
-                          if (value.isEmpty) {
-                            return 'Bạn quên nhập địa chỉ rồi!';
-                          }
-                          return null;
-                        },
-                        decoration: InputDecoration(
-                          labelText: 'Địa chỉ',
-                          border: OutlineInputBorder(
+                      Padding(
+                        padding:
+                            EdgeInsets.symmetric(vertical: 10, horizontal: 5),
+                        child: TextFormField(
+                          controller: yccvControll,
+                          validator: (String value) {
+                            if (value.isEmpty) {
+                              return 'Quên nhập yêu cầu rồi nè!';
+                            } else if (value.length < 3) {
+                              return 'Tên Phải dài hơn 3 ký tự';
+                            }
+                            return null;
+                          },
+                          decoration: InputDecoration(
+                            labelText: 'Yêu cầu công việc',
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(20),
+                            ),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding:
+                            EdgeInsets.symmetric(vertical: 10, horizontal: 5),
+                        child: TextFormField(
+                          controller: diaChiControll,
+                          validator: (String value) {
+                            if (value.isEmpty) {
+                              return 'Bạn quên nhập địa chỉ rồi!';
+                            }
+                            return null;
+                          },
+                          decoration: InputDecoration(
+                            labelText: 'Địa chỉ',
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(20),
+                            ),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.symmetric(
+                          vertical: 10,
+                          horizontal: 5,
+                        ),
+                        child: Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(color: Colors.black38),
                             borderRadius: BorderRadius.circular(20),
+                          ),
+                          child: DropDownField(
+                            controller: quanControll,
+                            hintText: "Chọn quận/ huyện",
+                            enabled: true,
+                            items: quan,
+                            onValueChanged: (value) {
+                              setState(
+                                () {
+                                  selectedValuedQuan = value;
+                                },
+                              );
+                            },
                           ),
                         ),
                       ),
@@ -209,47 +203,82 @@ class _DatLichWidgetState extends State<DatLichWidget> {
                         mainAxisSpacing: 5.0,
                         shrinkWrap: true,
                         children: [
-                          RaisedButton(
-                            textColor: Colors.white,
-                            color: Colors.blueAccent,
-                            onPressed: () {
-                              if (_formKey.currentState.validate()) {
-                                // insertMethod();
-                                Navigator.pop(context, 'Thành công!');
-                              } else {
-                                Scaffold.of(context).showSnackBar(
-                                  SnackBar(
-                                    content: Text('Bạn đã nhập sai thông tin!'),
-                                  ),
-                                );
-                              }
-                            },
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(15.0),
-                            ),
-                            child: Padding(
-                              padding: EdgeInsets.all(10),
-                              child: Text(
-                                "Đặt Lịch",
-                                style: TextStyle(fontSize: 18),
+                          Padding(
+                            padding: EdgeInsets.symmetric(
+                                vertical: 5, horizontal: 20),
+                            child: RaisedButton(
+                              textColor: Colors.white,
+                              color: Colors.blueAccent,
+                              onPressed: () {
+                                if (_formKey.currentState.validate()) {
+                                  return showDialog(
+                                    context: context,
+                                    builder: (context) {
+                                      return AlertDialog(
+                                        content: Text(
+                                            "Cảm ơn quý khách hàng đã đặt lịch!"),
+                                        actions: [
+                                          FlatButton(
+                                            onPressed: () {
+                                              insertMethod();
+                                              Navigator.popUntil(
+                                                  context,
+                                                  ModalRoute.withName(
+                                                      '/HomePage'));
+                                              // Navigator.maybePop(
+                                              //     context, 'Thành công!');
+                                            },
+                                            child: Text("Xác nhận"),
+                                          )
+                                        ],
+                                        elevation: 24,
+                                        shape: RoundedRectangleBorder(
+                                          borderRadius:
+                                              BorderRadius.circular(10),
+                                        ),
+                                      );
+                                    },
+                                  );
+                                } else {
+                                  Scaffold.of(context).showSnackBar(
+                                    SnackBar(
+                                      content:
+                                          Text('Bạn đã nhập sai thông tin!'),
+                                    ),
+                                  );
+                                }
+                              },
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(15.0),
+                              ),
+                              child: Padding(
+                                padding: EdgeInsets.all(10),
+                                child: Text(
+                                  "Đặt Lịch",
+                                  style: TextStyle(fontSize: 18),
+                                ),
                               ),
                             ),
                           ),
-                          RaisedButton(
-                            textColor: Colors.white,
-                            color: Colors.red[400],
-                            onPressed: () {
-                              Navigator.pop(
-                                  context, 'Hẹn lại bạn lần sau nhé!');
-                            },
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(15.0),
-                            ),
-                            child: Padding(
-                              padding: EdgeInsets.all(10),
-                              child: Text(
-                                "Thoát",
-                                style: TextStyle(fontSize: 18),
+                          Padding(
+                            padding: EdgeInsets.symmetric(
+                                vertical: 5, horizontal: 20),
+                            child: RaisedButton(
+                              textColor: Colors.white,
+                              color: Colors.red[400],
+                              onPressed: () {
+                                Navigator.pop(
+                                    context, 'Hẹn lại bạn lần sau nhé!');
+                              },
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(15.0),
+                              ),
+                              child: Padding(
+                                padding: EdgeInsets.all(10),
+                                child: Text(
+                                  "Thoát",
+                                  style: TextStyle(fontSize: 18),
+                                ),
                               ),
                             ),
                           ),
@@ -266,3 +295,29 @@ class _DatLichWidgetState extends State<DatLichWidget> {
     );
   }
 }
+
+List<String> quan = [
+  "quận 1",
+  "Quận 2",
+  "Quận 3",
+  "Quận 4",
+  "Quận 5",
+  "Quận 6",
+  "Quận 7",
+  "Quận 8",
+  "Quận 9",
+  "Quận 10",
+  "Quận 11",
+  "Quận 12",
+  "Quận Thủ Đức",
+  "Quận Gò Vấp",
+  "Quận Bình Thạnh",
+  "Quận Bình Tân",
+  "Quận Tân Phú",
+  "Quận Phú Nhuận",
+  "Quận Tân Bình",
+  "Huyện Củ Chi",
+  "Huyện Hóc Môn",
+  "Huyện Bình Chánh",
+  "Huyện Nhà Bè",
+];
