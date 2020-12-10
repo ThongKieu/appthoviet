@@ -1,12 +1,14 @@
 import 'dart:convert';
+import 'package:appthoviet/Views/home.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:dropdownfield/dropdownfield.dart';
+import 'package:date_form_field/date_form_field.dart';
 
 class DatLich extends StatelessWidget {
   getMethod() async {
     String url =
-        "http://192.168.1.8:8080/dashboard_app/includes/class/mobile/getData.php";
+        "http://192.168.1.8:8080/dashboard_app/pages/mobile/getData.php";
     var res = await http
         .get(Uri.encodeFull(url), headers: {"Accept": "application/json"});
     var responsBody = json.decode(res.body);
@@ -43,11 +45,12 @@ class _DatLichWidgetState extends State<DatLichWidget> {
   String get quanCont => quanControll.text;
   TextEditingController diaChiControll = TextEditingController();
   String get diaChiCont => diaChiControll.text;
-
+  TextEditingController ngayDatControll = TextEditingController();
+  String get dateCont => ngayDatControll.text;
   String selectedValuedQuan = "";
   insertMethod() async {
     String theUrl =
-        "http://192.168.1.8:8080/dashboard_app/includes/class/mobile/insertData.php";
+        "http://192.168.1.8:8080/dashboard_app/pages/mobile/insertData.php";
     var res = await http.post(
       Uri.encodeFull(theUrl),
       headers: {"Accept": "application/json"},
@@ -57,10 +60,25 @@ class _DatLichWidgetState extends State<DatLichWidget> {
         "sdtCont": sdtCont,
         "quanCont": quanCont,
         "diaChiCont": diaChiCont,
+        "dateCont": dateCont,
       },
     );
     var respBody = json.decode(res.body);
     print(respBody);
+  }
+  // ngay book 
+  DateTime initialDate = DateTime.now();
+  DateTime firstDate = DateTime.now();
+  DateTime lastDate = DateTime(2100);
+  Future<DateTime> showPicker() async {
+    DateTime date = await showDatePicker(
+      context: context,
+      initialDate: firstDate,
+      firstDate: firstDate,
+      lastDate: lastDate,
+    );
+
+    return date;
   }
 
   @override
@@ -95,10 +113,12 @@ class _DatLichWidgetState extends State<DatLichWidget> {
                         padding:
                             EdgeInsets.symmetric(vertical: 10, horizontal: 5),
                         child: TextFormField(
+                          keyboardType: TextInputType.text,
                           cursorHeight: 15,
                           controller: tenControll,
                           decoration: InputDecoration(
                             labelText: 'Tên',
+                            helperText: 'Vd: A. Tam, C. Ngoc,...',
                             hintText: 'Tên bạn là đẹp nhất!',
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(20),
@@ -122,6 +142,7 @@ class _DatLichWidgetState extends State<DatLichWidget> {
                           keyboardType: TextInputType.phone,
                           decoration: InputDecoration(
                             labelText: 'Số điện thoại',
+                            helperText: 'Vd: 0903.532.938',
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(20),
                             ),
@@ -143,6 +164,7 @@ class _DatLichWidgetState extends State<DatLichWidget> {
                           },
                           decoration: InputDecoration(
                             labelText: 'Yêu cầu công việc',
+                            helperText: 'Vd: Sửa ống nước, sửa tủ lạnh,.v.v..',
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(20),
                             ),
@@ -162,6 +184,7 @@ class _DatLichWidgetState extends State<DatLichWidget> {
                           },
                           decoration: InputDecoration(
                             labelText: 'Địa chỉ',
+                            helperText: 'Vd: 184 Nguyến Xí, p26',
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(20),
                             ),
@@ -181,6 +204,7 @@ class _DatLichWidgetState extends State<DatLichWidget> {
                           child: DropDownField(
                             controller: quanControll,
                             hintText: "Chọn quận/ huyện",
+                            inputFormatters: [],
                             enabled: true,
                             items: quan,
                             onValueChanged: (value) {
@@ -191,6 +215,26 @@ class _DatLichWidgetState extends State<DatLichWidget> {
                               );
                             },
                           ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.symmetric(
+                          vertical: 10,
+                          horizontal: 5,
+                        ),
+                        child: DateFormField(
+                          controller: ngayDatControll,
+                          showPicker: showPicker,
+                          decoration: InputDecoration(
+                            labelText: 'Chọn ngày',
+                            helperText: 'Vd: 184 Nguyến Xí, p26',
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(20),
+                            ),
+                          ),
+                          // onDateChanged: (DateTime date) {
+                          //   // your code
+                          // },
                         ),
                       ),
                       Padding(padding: EdgeInsets.all(5)),
@@ -207,6 +251,7 @@ class _DatLichWidgetState extends State<DatLichWidget> {
                             padding: EdgeInsets.symmetric(
                                 vertical: 5, horizontal: 20),
                             child: RaisedButton(
+                              elevation: 5,
                               textColor: Colors.white,
                               color: Colors.blueAccent,
                               onPressed: () {
@@ -221,12 +266,12 @@ class _DatLichWidgetState extends State<DatLichWidget> {
                                           FlatButton(
                                             onPressed: () {
                                               insertMethod();
-                                              Navigator.popUntil(
-                                                  context,
-                                                  ModalRoute.withName(
-                                                      '/HomePage'));
-                                              // Navigator.maybePop(
-                                              //     context, 'Thành công!');
+                                              Navigator.of(context)
+                                                  .pushAndRemoveUntil(
+                                                      MaterialPageRoute(
+                                                          builder: (context) =>
+                                                              HomePage()),
+                                                      (route) => false);
                                             },
                                             child: Text("Xác nhận"),
                                           )
@@ -264,6 +309,7 @@ class _DatLichWidgetState extends State<DatLichWidget> {
                             padding: EdgeInsets.symmetric(
                                 vertical: 5, horizontal: 20),
                             child: RaisedButton(
+                              elevation: 5,
                               textColor: Colors.white,
                               color: Colors.red[400],
                               onPressed: () {
@@ -297,7 +343,7 @@ class _DatLichWidgetState extends State<DatLichWidget> {
 }
 
 List<String> quan = [
-  "quận 1",
+  "Quận 1",
   "Quận 2",
   "Quận 3",
   "Quận 4",
