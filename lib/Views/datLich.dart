@@ -111,7 +111,7 @@ class _DatLichWidgetState extends State<DatLichWidget> {
                       Divider(),
                       Padding(
                         padding:
-                            EdgeInsets.symmetric(vertical: 7, horizontal: 5),
+                            EdgeInsets.symmetric(vertical: 5, horizontal: 5),
                         child: TextFormField(
                           keyboardType: TextInputType.text,
                           cursorHeight: 15,
@@ -130,7 +130,7 @@ class _DatLichWidgetState extends State<DatLichWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsets.symmetric(vertical: 7, horizontal: 5),
+                            EdgeInsets.symmetric(vertical: 5, horizontal: 5),
                         child: TextFormField(
                           controller: sdtControll,
                           validator: (String value) {
@@ -155,7 +155,7 @@ class _DatLichWidgetState extends State<DatLichWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsets.symmetric(vertical: 7, horizontal: 5),
+                            EdgeInsets.symmetric(vertical: 5, horizontal: 5),
                         child: TextFormField(
                           controller: yccvControll,
                           validator: (String value) {
@@ -179,7 +179,7 @@ class _DatLichWidgetState extends State<DatLichWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsets.symmetric(vertical: 7, horizontal: 5),
+                            EdgeInsets.symmetric(vertical: 5, horizontal: 5),
                         child: TextFormField(
                           controller: diaChiControll,
                           validator: (String value) {
@@ -252,7 +252,7 @@ class _DatLichWidgetState extends State<DatLichWidget> {
                       Padding(padding: EdgeInsets.all(5)),
                       GridView.count(
                         primary: false,
-                        padding: const EdgeInsets.fromLTRB(0, 10, 0, 10),
+                        padding: const EdgeInsets.fromLTRB(0, 5, 0, 5),
                         crossAxisCount: 2,
                         childAspectRatio: 3,
                         crossAxisSpacing: 5.0,
