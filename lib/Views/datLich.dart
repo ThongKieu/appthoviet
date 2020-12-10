@@ -49,8 +49,7 @@ class _DatLichWidgetState extends State<DatLichWidget> {
   String get dateCont => ngayDatControll.text;
   String selectedValuedQuan = "";
   insertMethod() async {
-    String theUrl =
-        "http://192.168.1.8:8080/dashboard_app/pages/mobile/insertData.php";
+    String theUrl = "http://192.168.1.8:8080/1/pages/mobile/insertData.php";
     var res = await http.post(
       Uri.encodeFull(theUrl),
       headers: {"Accept": "application/json"},
@@ -66,7 +65,8 @@ class _DatLichWidgetState extends State<DatLichWidget> {
     var respBody = json.decode(res.body);
     print(respBody);
   }
-  // ngay book 
+
+  // ngay book
   DateTime initialDate = DateTime.now();
   DateTime firstDate = DateTime.now();
   DateTime lastDate = DateTime(2100);
@@ -111,7 +111,7 @@ class _DatLichWidgetState extends State<DatLichWidget> {
                       Divider(),
                       Padding(
                         padding:
-                            EdgeInsets.symmetric(vertical: 10, horizontal: 5),
+                            EdgeInsets.symmetric(vertical: 7, horizontal: 5),
                         child: TextFormField(
                           keyboardType: TextInputType.text,
                           cursorHeight: 15,
@@ -120,6 +120,8 @@ class _DatLichWidgetState extends State<DatLichWidget> {
                             labelText: 'Tên',
                             helperText: 'Vd: A. Tam, C. Ngoc,...',
                             hintText: 'Tên bạn là đẹp nhất!',
+                            contentPadding: EdgeInsets.symmetric(
+                                vertical: 16, horizontal: 10),
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(20),
                             ),
@@ -128,7 +130,7 @@ class _DatLichWidgetState extends State<DatLichWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsets.symmetric(vertical: 10, horizontal: 5),
+                            EdgeInsets.symmetric(vertical: 7, horizontal: 5),
                         child: TextFormField(
                           controller: sdtControll,
                           validator: (String value) {
@@ -143,6 +145,8 @@ class _DatLichWidgetState extends State<DatLichWidget> {
                           decoration: InputDecoration(
                             labelText: 'Số điện thoại',
                             helperText: 'Vd: 0903.532.938',
+                            contentPadding: EdgeInsets.symmetric(
+                                vertical: 16, horizontal: 10),
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(20),
                             ),
@@ -151,7 +155,7 @@ class _DatLichWidgetState extends State<DatLichWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsets.symmetric(vertical: 10, horizontal: 5),
+                            EdgeInsets.symmetric(vertical: 7, horizontal: 5),
                         child: TextFormField(
                           controller: yccvControll,
                           validator: (String value) {
@@ -165,6 +169,8 @@ class _DatLichWidgetState extends State<DatLichWidget> {
                           decoration: InputDecoration(
                             labelText: 'Yêu cầu công việc',
                             helperText: 'Vd: Sửa ống nước, sửa tủ lạnh,.v.v..',
+                            contentPadding: EdgeInsets.symmetric(
+                                vertical: 16, horizontal: 10),
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(20),
                             ),
@@ -173,7 +179,7 @@ class _DatLichWidgetState extends State<DatLichWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsets.symmetric(vertical: 10, horizontal: 5),
+                            EdgeInsets.symmetric(vertical: 7, horizontal: 5),
                         child: TextFormField(
                           controller: diaChiControll,
                           validator: (String value) {
@@ -185,6 +191,8 @@ class _DatLichWidgetState extends State<DatLichWidget> {
                           decoration: InputDecoration(
                             labelText: 'Địa chỉ',
                             helperText: 'Vd: 184 Nguyến Xí, p26',
+                            contentPadding: EdgeInsets.symmetric(
+                                vertical: 16, horizontal: 10),
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(20),
                             ),
@@ -193,48 +201,52 @@ class _DatLichWidgetState extends State<DatLichWidget> {
                       ),
                       Padding(
                         padding: EdgeInsets.symmetric(
-                          vertical: 10,
+                          vertical: 7,
                           horizontal: 5,
                         ),
                         child: Container(
                           decoration: BoxDecoration(
-                            border: Border.all(color: Colors.black38),
+                            border: Border.all(
+                              color: Colors.grey[600],
+                              width: 1,
+                            ),
                             borderRadius: BorderRadius.circular(20),
                           ),
-                          child: DropDownField(
-                            controller: quanControll,
-                            hintText: "Chọn quận/ huyện",
-                            inputFormatters: [],
-                            enabled: true,
-                            items: quan,
-                            onValueChanged: (value) {
-                              setState(
-                                () {
-                                  selectedValuedQuan = value;
-                                },
-                              );
-                            },
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(20),
+                            child: DropDownField(
+                              controller: quanControll,
+                              hintText: "Chọn quận/ huyện",
+                              enabled: true,
+                              items: quan,
+                              onValueChanged: (value) {
+                                setState(
+                                  () {
+                                    selectedValuedQuan = value;
+                                  },
+                                );
+                              },
+                            ),
                           ),
                         ),
                       ),
                       Padding(
                         padding: EdgeInsets.symmetric(
-                          vertical: 10,
+                          vertical: 14,
                           horizontal: 5,
                         ),
                         child: DateFormField(
+                          format: 'dd-MM-yyyy',
                           controller: ngayDatControll,
                           showPicker: showPicker,
                           decoration: InputDecoration(
                             labelText: 'Chọn ngày',
-                            helperText: 'Vd: 184 Nguyến Xí, p26',
+                             contentPadding: EdgeInsets.symmetric(
+                                vertical: 16, horizontal: 10),
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(20),
                             ),
                           ),
-                          // onDateChanged: (DateTime date) {
-                          //   // your code
-                          // },
                         ),
                       ),
                       Padding(padding: EdgeInsets.all(5)),

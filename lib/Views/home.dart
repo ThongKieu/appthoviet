@@ -371,7 +371,7 @@ void _dVkhac(context) {
                           borderRadius: BorderRadius.circular(10),
                           child: InkWell(
                             onTap: () {
-                              Navigator.push(
+                              Navigator.pushReplacement(
                                 context,
                                 MaterialPageRoute(
                                     builder: (context) => ThoSuaMayLanh()),
@@ -414,8 +414,8 @@ class DVTV extends StatelessWidget {
           children: [
             Image.asset(
               urlDVTV,
-              width: 60,
-              height: 60,
+              width: 50,
+              height: 50,
               fit: BoxFit.cover,
             ),
             new Text(
