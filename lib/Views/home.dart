@@ -97,7 +97,7 @@ class HomeStateWidget extends State<HomeWidget> {
                       splashColor: Colors.green[200],
                       child: Center(
                         child: DVTV(
-                          urlDVTV: url + 'icon_tho.png',
+                          urlDVTV: url + 'vsbn.png',
                           titleDVTV: 'Thợ Điện',
                         ),
                       ),
@@ -116,7 +116,7 @@ class HomeStateWidget extends State<HomeWidget> {
                       splashColor: Colors.green[200],
                       child: Center(
                         child: DVTV(
-                          urlDVTV: url + 'icon_tho.png',
+                          urlDVTV: url + 'vsbn.png',
                           titleDVTV: 'Thợ Điện Lạnh',
                         ),
                       ),
@@ -137,7 +137,7 @@ class HomeStateWidget extends State<HomeWidget> {
                       splashColor: Colors.green[200],
                       child: Center(
                         child: DVTV(
-                          urlDVTV: url + 'icon_tho.png',
+                          urlDVTV: url + 'vsbn.png',
                           titleDVTV: 'Điện Nước',
                         ),
                       ),
@@ -155,7 +155,7 @@ class HomeStateWidget extends State<HomeWidget> {
                       splashColor: Colors.green[200],
                       child: Center(
                         child: DVTV(
-                          urlDVTV: url + 'icon_tho.png',
+                          urlDVTV: url + 'vsbn.png',
                           titleDVTV: 'Thợ Mộc',
                         ),
                       ),
@@ -174,7 +174,7 @@ class HomeStateWidget extends State<HomeWidget> {
                       splashColor: Colors.green[200],
                       child: Center(
                         child: DVTV(
-                          urlDVTV: url + 'icon_tho.png',
+                          urlDVTV: url + 'vsbn.png',
                           titleDVTV: 'Thông Nghẹt',
                         ),
                       ),
@@ -193,7 +193,7 @@ class HomeStateWidget extends State<HomeWidget> {
                       splashColor: Colors.green[200],
                       child: Center(
                         child: DVTV(
-                          urlDVTV: url + 'icon_tho.png',
+                          urlDVTV: url + 'vsbn.png',
                           titleDVTV: 'Chống Thấm',
                         ),
                       ),
@@ -211,7 +211,7 @@ class HomeStateWidget extends State<HomeWidget> {
                       splashColor: Colors.green[200],
                       child: Center(
                         child: DVTV(
-                          urlDVTV: url + 'icon_tho.png',
+                          urlDVTV: url + 'vsbn.png',
                           titleDVTV: 'Dò Nước Rò Rỉ',
                         ),
                       ),
@@ -229,7 +229,7 @@ class HomeStateWidget extends State<HomeWidget> {
                       splashColor: Colors.green[200],
                       child: Center(
                         child: DVTV(
-                          urlDVTV: url + 'icon_tho.png',
+                          urlDVTV: url + 'vsbn.png',
                           titleDVTV: 'VS Bể Nước',
                         ),
                       ),
@@ -342,7 +342,7 @@ void _dVkhac(context) {
                             splashColor: Colors.green[200],
                             child: Center(
                               child: DVTV(
-                                urlDVTV: url + 'icon_tho.png',
+                                urlDVTV: url + 'vsbn.png',
                                 titleDVTV: 'NL Mặt Trời',
                               ),
                             ),
@@ -361,7 +361,7 @@ void _dVkhac(context) {
                             splashColor: Colors.green[200],
                             child: Center(
                               child: DVTV(
-                                urlDVTV: url + 'icon_tho.png',
+                                urlDVTV: url + 'vsbn.png',
                                 titleDVTV: 'Thợ Sửa Nhà',
                               ),
                             ),
@@ -380,7 +380,7 @@ void _dVkhac(context) {
                             splashColor: Colors.green[200],
                             child: Center(
                               child: DVTV(
-                                urlDVTV: url + 'icon_tho.png',
+                                urlDVTV: url + 'vsbn.png',
                                 titleDVTV: 'Sửa Máy Lạnh',
                               ),
                             ),

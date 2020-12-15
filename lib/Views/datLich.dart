@@ -49,7 +49,8 @@ class _DatLichWidgetState extends State<DatLichWidget> {
   String get dateCont => ngayDatControll.text;
   String selectedValuedQuan = "";
   insertMethod() async {
-    String theUrl = "http://192.168.1.8:8080/1/pages/mobile/insertData.php";
+    String theUrl =
+        "http://192.168.1.8:8080/dashboard_app/pages/mobile/insertData.php";
     var res = await http.post(
       Uri.encodeFull(theUrl),
       headers: {"Accept": "application/json"},
@@ -241,7 +242,7 @@ class _DatLichWidgetState extends State<DatLichWidget> {
                           showPicker: showPicker,
                           decoration: InputDecoration(
                             labelText: 'Chọn ngày',
-                             contentPadding: EdgeInsets.symmetric(
+                            contentPadding: EdgeInsets.symmetric(
                                 vertical: 16, horizontal: 10),
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(20),
