@@ -123,7 +123,17 @@ flutter:
   - lib/images/VSBN/fix_ve-sinh-bon-nuoc-inox-quan-11-5-e1544773389848-7.jpg
   - lib/images/VSBN/fix_ve-sinh-bon-nuoc-inox-quan-11-5-e1544773389848-9.jpg
   - lib/images/zalo.png
+  - lib/images/thoDien.png
+  - lib/images/thoDL.png
+  - lib/images/thoNuoc.png
   - lib/images/vsbn.png
+  - lib/images/thoMoc.png
+  - lib/images/thoThongNghet.png
+  - lib/images/thoDoRoRi.png
+  - lib/images/thoSuaML.png
+  - lib/images/thoPMT.png
+  - lib/images/thoSuaNha.png
+  - lib/images/dvKhac.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

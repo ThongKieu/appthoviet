@@ -86,7 +86,7 @@ class _DatLichWidgetState extends State<DatLichWidget> {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Padding(
-        padding: EdgeInsets.symmetric(vertical: 20, horizontal: 15),
+        padding: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
         child: Form(
           key: _formKey,
           child: Column(
@@ -237,20 +237,20 @@ class _DatLichWidgetState extends State<DatLichWidget> {
                           horizontal: 5,
                         ),
                         child: DateFormField(
-                          format: 'dd-MM-yyyy',
+                          format: 'yyyy-MM-dd',
                           controller: ngayDatControll,
                           showPicker: showPicker,
                           decoration: InputDecoration(
                             labelText: 'Chọn ngày',
                             contentPadding: EdgeInsets.symmetric(
-                                vertical: 16, horizontal: 10),
+                                vertical: 12, horizontal: 10),
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(20),
                             ),
                           ),
                         ),
                       ),
-                      Padding(padding: EdgeInsets.all(5)),
+                      Padding(padding: EdgeInsets.all(1)),
                       GridView.count(
                         primary: false,
                         padding: const EdgeInsets.fromLTRB(0, 5, 0, 5),
@@ -313,7 +313,7 @@ class _DatLichWidgetState extends State<DatLichWidget> {
                                 padding: EdgeInsets.all(10),
                                 child: Text(
                                   "Đặt Lịch",
-                                  style: TextStyle(fontSize: 18),
+                                  style: TextStyle(fontSize: 14),
                                 ),
                               ),
                             ),
@@ -336,7 +336,7 @@ class _DatLichWidgetState extends State<DatLichWidget> {
                                 padding: EdgeInsets.all(10),
                                 child: Text(
                                   "Thoát",
-                                  style: TextStyle(fontSize: 18),
+                                  style: TextStyle(fontSize: 14),
                                 ),
                               ),
                             ),
